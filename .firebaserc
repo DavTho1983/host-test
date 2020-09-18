@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "host-test-4cd54"
+    "default": "host-test-4cd54",
+    "production": "host-test-4cd54"
   }
 }
