@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "host-test-4cd54"
+  },
+  "targets": {
+    "host-test-4cd54": {
+      "hosting": {
+        "develop": [
+          "develop-bc122"
+        ]
+      }
+    }
   }
 }
