@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         Hello CI/CD with Google Cloud Build!
-        Version 45 production only
+        Version 46 develop and production
       </header>
     </div>
   );

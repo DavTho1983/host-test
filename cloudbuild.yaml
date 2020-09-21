@@ -7,9 +7,7 @@ steps:
       args: ['run', 'build']
     # Deploy-develop
     - name: 'gcr.io/host-test-4cd54/firebase'
-      only: 'develop'
       args: ['deploy', '--only=hosting:develop']
     # Deploy-production
     - name: 'gcr.io/host-test-4cd54/firebase'
-      only: 'production'
       args: ['deploy', '--only=hosting:production']
