@@ -7,4 +7,4 @@ steps:
       args: ['run', 'build']
     # Deploy
     - name: 'gcr.io/host-test-4cd54/firebase'
-      args: ['target:apply hosting develop-bc122 deploy --only hosting:develop-bc122']
+      args: ['target:apply hosting develop-bc122 deploy hosting:develop-bc122']
