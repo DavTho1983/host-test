@@ -5,9 +5,6 @@ steps:
     # Build
     - name: 'gcr.io/cloud-builders/npm'
       args: ['run', 'build']
-    # Deploy-develop
+    # Deploy
     - name: 'gcr.io/host-test-4cd54/firebase'
-      args: ['deploy', '--only=hosting:develop']
-    # Deploy-production
-    - name: 'gcr.io/host-test-4cd54/firebase'
-      args: ['deploy', '--only=hosting:production']
+      args: ['deploy', '--only=hosting:$_DEPLOY_TO']
