@@ -7,4 +7,6 @@ steps:
       args: ['run', 'build']
     # Deploy
     - name: 'gcr.io/$_PROJECT_ENV/firebase'
+      env:
+        - 'REACT_APP_API_KEY=$_API_KEY'
       args: ['deploy', '--only=hosting:$_DEPLOY_TO', '--project', '$_PROJECT_ENV']

@@ -3,7 +3,7 @@ import 'firebase/auth';
 import 'firebase/firestore';
 
 const firebaseConfig = {
-	apiKey: "AIzaSyDuA3EiNMF9YRbu278LRQcUUYYtJqAu2Vk",
+	apiKey: process.env.REACT_APP_API_KEY,
     // authDomain: "ammonite-prototype-2dfa7.firebaseapp.com",
     // databaseURL: "https://ammonite-prototype-2dfa7.firebaseio.com",
     projectId: "host-test-4cd54",
