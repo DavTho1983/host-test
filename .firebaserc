@@ -1,13 +1,17 @@
 {
   "projects": {
-    "default": [project-id]
+    "default": "host-test-4cd54"
   },
   "targets": {
-    [project-id]: {
+    "host-test-4cd54": {
       "hosting": {
         "production": [
           "production-96a11"
-        ],
+        ]
+      }
+    },
+     "host-test-dev": {
+      "hosting": {
         "develop": [
           "develop-8e0d2"
         ]
