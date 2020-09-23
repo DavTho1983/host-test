@@ -5,11 +5,15 @@
   "targets": {
     "host-test-4cd54": {
       "hosting": {
-        "develop": [
-          "develop-bc122"
-        ],
         "production": [
           "production-96a11"
+        ]
+      }
+    },
+     "host-test-dev": {
+      "hosting": {
+        "develop": [
+          "develop-8e0d2"
         ]
       }
     }
