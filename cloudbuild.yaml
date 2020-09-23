@@ -5,6 +5,11 @@ steps:
     # Build
     - name: 'gcr.io/cloud-builders/npm'
       args: ['run', 'build']
+    #Decrypt
+    - name: 'gcr.io/cloud-builders/gcloud'
+      args: ['kms', 'decrypt', '--ciphertext-file=.env.enc', '--plaintext-file=.env', '--location=global', '--keyring=host-test-key-ring', '--key=cloudbuild-env']
     # Deploy
     - name: 'gcr.io/$_PROJECT_ENV/firebase'
-      args: ['deploy', '--only=hosting:$_DEPLOY_TO', '--project', '$_PROJECT_ENV']
+      env:
+        - 'REACT_APP_API_KEY=$_API_KEY'
+      args: ['deploy', '--token=FIREBASE_TOKEN', '--only=hosting:$_DEPLOY_TO', '--project', '$_PROJECT_ENV']
