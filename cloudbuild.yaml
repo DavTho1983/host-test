@@ -7,4 +7,4 @@ steps:
       args: ['run', 'build']
     # Deploy
     - name: 'gcr.io/$_PROJECT_ENV/firebase'
-      args: ['deploy', '--only=hosting:$_DEPLOY_TO']
+      args: ['deploy', '--project', '$_PROJECT_ENV, '--only=hosting:$_DEPLOY_TO']
