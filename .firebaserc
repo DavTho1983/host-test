@@ -19,6 +19,13 @@
           "develop-8e0d2"
         ]
       }
+    },
+     "host-test-dev": {
+      "hosting": {
+        "develop": [
+          "develop-8e0d2"
+        ]
+      }
     }
   }
 }
