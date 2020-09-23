@@ -30,7 +30,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         Hello CI/CD with Google Cloud Build!
-        PRODUCTION TEST WITH FIRESTORE!!!!!!!!!!!!!!!!!!!!!
+        PRODUCTION TEST WITH FIRESTORE SECRET CONFIG!!!!!!!!!!!!!!!!!!!!!
         {goats && goats.map(goat => <div>
           <div>
             name: {goat.name}
