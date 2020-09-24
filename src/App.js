@@ -5,9 +5,19 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        Hello CI/CD with Google Cloud Build!
-        DEVELOP TEST KMS ENCRYPT!!!!!!!!!!!!!!!!!!!!!
-        {process.env.REACT_APP_FIREBASE_TOKEN}
+      Hello CI/CD with Google Cloud Build!
+        DEVELOP TEST WITH FIRESTORE TOKEN IN ENV!!!!!!!!!!!!!!
+        {goats && goats.map(goat => <div>
+          <div>
+            name: {goat.name}
+          </div>
+          <div>
+            temperament: {goat.temperament}
+          </div>
+          <div>
+            fluffiness: {goat.fluffiness}
+          </div>
+        </div>)}
       </header>
     </div>
   );
