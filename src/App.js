@@ -29,13 +29,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-<<<<<<< HEAD
-        Hello CI/CD with Google Cloud Build!
-        PRODUCTION TEST WITH FIRESTORE TOKEN IN ENV!!!!!!!!!!!!!!
-=======
       Hello CI/CD with Google Cloud Build!
         DEVELOP TEST WITH FIRESTORE TOKEN IN ENV!!!!!!!!!!!!!!
->>>>>>> develop
         {goats && goats.map(goat => <div>
           <div>
             name: {goat.name}
