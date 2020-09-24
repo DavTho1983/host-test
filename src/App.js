@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         Hello CI/CD with Google Cloud Build!
-        DEVELOP TEST2!!!!!!!!!!!!!!!!!!!!!
+        DEVELOP TEST KMS ENCRYPT!!!!!!!!!!!!!!!!!!!!!
       </header>
     </div>
   );
