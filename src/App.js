@@ -1,5 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import firebase from './firebase';
 import './App.css';
+
+function App() {
+
+  const [ goats, setGoats ] = useState([]);
+
+  useEffect(() => {
+    if (goats) {
+      console.log("GOATS! ", goats);
+    }
+    const unsubscribe = firebase
+				.firestore()
+                .collection('goats')
+				.onSnapshot((snapshot) => {
+					const newGoats = snapshot.docs.map((doc) => ({
+						id: doc.id,
+						...doc.data()
+                    }));
+              if (goats.length !== newGoats.length) {
+                setGoats(newGoats);
+              }
+				});
+			return () => unsubscribe();
+    
+  }, [goats])
 
 function App() {
   return (
