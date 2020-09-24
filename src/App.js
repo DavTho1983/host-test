@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -8,6 +7,7 @@ function App() {
       <header className="App-header">
         Hello CI/CD with Google Cloud Build!
         DEVELOP TEST KMS ENCRYPT!!!!!!!!!!!!!!!!!!!!!
+        {process.env.REACT_APP_FIREBASE_TOKEN}
       </header>
     </div>
   );
