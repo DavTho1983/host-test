@@ -30,7 +30,7 @@ function App() {
     <div className="App">
       <header className="App-header">
       Hello CI/CD with Google Cloud Build!
-        DEVELOP TEST NEW WITH FIRESTORE TOKEN IN ENV!!!!!!!!!!!!!!
+        HELLO CAROLINE
         {goats && goats.map(goat => <div>
           <div>
             name: {goat.name}
